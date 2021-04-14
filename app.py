@@ -1,8 +1,8 @@
 from flask import Flask
-from api import item2vec
+from api import HAGE
 
 app = Flask(__name__)
-app.register_blueprint(item2vec.recommend, url_prefix="/item2vec")
+app.register_blueprint(HAGE.HAGE, url_prefix="/HAGE")
 
 if __name__ == '__main__':
     # 启动APP
